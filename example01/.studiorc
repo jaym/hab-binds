@@ -1,5 +1,5 @@
 #!/bin/bash
-
+HAB_STUDIO_SUP=false
 function do_test() {
   cat <<DOC
   hab_binds_example01 requires postgresql optionally. This test does not start postgresql.
