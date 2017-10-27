@@ -1,0 +1,10 @@
+{{~#eachAlive bind.postgresql.members as |postgresql|}}
+{{#if @last}}
+export PGPORT="{{postgresql.cfg.port}}"
+export PGHOST="{{postgresql.sys.ip}}"
+export PGUSER="{{postgresql.cfg.superuser_name}}"
+export PGPASSWORD="{{postgresql.cfg.superuser_password}}"
+{{/if}}
+{{~/eachAlive}}
+DBUSER="{{cfg.storage.user}}"
+DBPASS="{{cfg.storage.password}}"

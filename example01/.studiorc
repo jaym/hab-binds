@@ -1,0 +1,14 @@
+#!/bin/bash
+
+function do_test() {
+  cat <<DOC
+  hab_binds_example01 requires postgresql optionally. This test does not start postgresql.
+  It runs the following commands:
+
+  sup-term
+  hab svc start $HAB_ORIGIN/hab_binds_example01 --bind postgresql:postgresql.default
+DOC
+
+  sup-term
+  hab svc start $HAB_ORIGIN/hab_binds_example01 --bind postgresql:postgresql.default
+}

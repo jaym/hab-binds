@@ -1,0 +1,9 @@
+#!{{pkgPathFor "core/bash"}}/bin/bash
+
+exec 2>&1
+
+echo "Running init"
+cat {{pkg.svc_config_path}}/env
+
+
+exit 0
