@@ -14,7 +14,6 @@ pkg_binds_optional=(
   [postgresql]="port superuser_name superuser_password"
 )
 pkg_description="Binds Example 1"
-pkg_upstream_url="https://www.chef.io/automate/"
 pkg_bin_dirs=(bin)
 pkg_lib_dirs=(lib)
 
